@@ -1,0 +1,22 @@
+.experience{--scene-height:max(700px,100svh);position:relative;height:var(--scene-height);isolation:isolate;background:#030810}
+.stage{position:relative;width:100%;height:100%;overflow:hidden}
+.playing{z-index:2000}
+.playing .stage{position:fixed;inset:0;width:100%;height:100dvh;z-index:2000;background:#030810;overscroll-behavior:none;touch-action:pinch-zoom}
+.canvas,.poster,.cameraWarp{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;transform-origin:0 0}
+.cameraWarp{will-change:transform}
+.canvas{opacity:0;transition:opacity .15s ease}.canvasReady{opacity:1}
+.poster{opacity:1;transition:opacity .15s ease}.posterHidden{opacity:0}
+.poster picture,.poster img{display:block;width:100%;height:100%;object-fit:contain}
+.display{position:absolute;left:0;top:0;width:1600px;height:1000px;transform-origin:0 0;opacity:0;overflow:hidden;backface-visibility:hidden;will-change:transform;container-type:size;background:#030810}
+.content .display{transform:none;opacity:1;width:100%;height:100%;will-change:auto}
+.status{position:absolute;right:4%;bottom:22px;z-index:8;font-size:10px;color:#65727e}
+.status button{background:none;border:0;border-bottom:1px solid #b4c9d518;padding:9px 0;color:inherit;font:inherit;min-height:35px;cursor:pointer}
+.status button:hover{color:#edf2f5;border-color:#b4c9d580}.status button:focus-visible{outline:2px solid #b2cfde;outline-offset:4px}.status button span{padding-left:14px;font-size:14px}
+@media(max-width:800px){.experience{--scene-height:max(650px,100svh)}.status{right:5%;bottom:18px}}
+@media(max-width:480px){.experience{--scene-height:max(620px,100svh)}.status{right:6%;bottom:18px}}
+@media(prefers-reduced-motion:reduce){.canvas,.poster{transition:none}}
+/* Keep the live LCD in one predictable compositing plane above WebGL. */
+.display{z-index:3;backface-visibility:visible;will-change:auto;contain:paint}
+.cameraWarp{z-index:1}.poster{z-index:2}
+/* The screen glass belongs to the device; it disappears as the same HTML becomes the page. */
+.display::after{content:'';position:absolute;z-index:20;inset:0;pointer-events:none;background:linear-gradient(124deg,rgba(214,227,235,.055),transparent 37%,transparent 72%,rgba(141,170,190,.018));opacity:calc(1 - var(--reveal-progress,0));border-radius:inherit}

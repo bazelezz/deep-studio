@@ -1,0 +1,16 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  width: var(--brand-width, 144px);
+  max-width: 100%;
+  flex: 0 0 auto;
+  color: #e8ecef;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.artwork { display: block; width: 100%; height: auto; }
+.name { font-size: 1em; font-weight: 550; letter-spacing: .06em; }
+
+/* Color alone responds; the silhouette stays still, including during the intro. */
+a:hover .logo { color: #fff; }

@@ -1,0 +1,46 @@
+/* A single still-life composition for the current visual approval stage. */
+:root{--bg-deep:#030810;--bg-primary:#050f1b;--bg-surface:#0a1928;--ocean:#123047;--accent-ice:#b2cfde;--text-primary:#f1f3f5;--text-secondary:#a6b3c1;--border-subtle:rgba(178,207,222,.14)}
+.hero-world{background:var(--bg-deep)}
+.header{height:80px;border-bottom:1px solid rgba(178,207,222,.07)}
+.wordmark{font-size:25px;letter-spacing:3px;font-weight:570}
+.brand-line{width:15px;bottom:-7px;box-shadow:none;background:#b2cfde8a}
+.desktop-nav{gap:34px;margin-left:65px}
+.desktop-nav a{font-size:11px;color:#a6b3c1}
+.header-cta{padding:10px 14px;font-size:11px;border-color:#b2cfde28;border-radius:2px}
+.hero-copy{position:absolute;left:5.5%;top:48%;width:30%;max-width:540px;margin:0;padding:0;transform:translateY(-50%);text-align:left;z-index:5;pointer-events:none}
+.hero-title,.hero-offer{pointer-events:auto}
+.eyebrow{justify-content:flex-start;gap:9px;font-size:8px;letter-spacing:1.65px;color:#81909e}
+.tiny-light{width:3px;height:3px;box-shadow:none;background:#aabec9}
+.hero-copy h1{font-size:clamp(44px,4.1vw,76px);line-height:1.055;letter-spacing:-.058em;font-weight:410;margin:21px 0 0;white-space:nowrap}
+.hero-copy h1>span{color:#d9e2e8}
+.hero-offer{margin-top:29px;padding:0;max-width:none;width:100%}
+.hero-description{max-width:270px;margin:0;font-size:12px;line-height:1.8;color:#91a1af;text-wrap:pretty}
+.hero-actions{align-items:center;justify-content:flex-start;gap:19px;margin-top:26px;flex-wrap:wrap;flex-direction:row}
+.hero-actions .button{min-height:46px;font-size:11px;border-radius:2px;padding:11px 16px;gap:25px}
+.hero-actions .button-primary{min-width:186px;background:linear-gradient(125deg,#111d27,#080f16);color:#e5ebef;border:1px solid #a4bdcc50;box-shadow:inset 0 1px 0 #d9e9f20a}
+.hero-actions .button-primary:hover{background:#1b2934;border-color:#b2cfde9e;transform:none}
+.hero-actions .button-primary:active{background:#0a121b}
+.hero-actions .button-text{padding-inline:0;font-size:10px;gap:12px;color:#a6b3c1}
+.hero-actions .button-text:hover{background:transparent;color:#fff}
+.hero-actions .button span{font-size:18px}
+.muted-heading{color:#8b9eae}
+.process-section{background:linear-gradient(120deg,#0a1723,#07111c)}
+.contact-section{background:radial-gradient(ellipse at 15% 50%,#102639,#081724 60%,#06121e)}
+.craft-canvas{background:#0a1928;border-color:#b2cfde24}
+.footer-light{background:linear-gradient(90deg,transparent,#b2cfde80 30%,#d5e2e9 50%,#b2cfde70 70%,transparent);box-shadow:none}
+@media(min-width:1700px){.header{height:88px}.hero-description{font-size:14px;max-width:310px}.hero-copy{top:47%}}
+@media(max-width:1100px){.header{height:76px}.hero-copy{left:4%;width:31%;top:46%}.hero-copy h1{font-size:clamp(36px,4.1vw,46px)}.hero-description{font-size:11px}.hero-offer{margin-top:23px}.hero-actions{gap:5px;margin-top:21px;flex-direction:column;align-items:flex-start}.hero-actions .button-text{min-height:36px}}
+@media(max-width:800px){.header{height:72px}.hero-copy{left:5%;right:5%;top:31px;width:auto;max-width:none;transform:none;display:grid;grid-template-columns:1.3fr .8fr;gap:30px;align-items:start}.hero-copy h1{font-size:clamp(40px,7.3vw,54px);margin-top:16px;line-height:1.055}.hero-offer{margin-top:25px}.hero-description{max-width:230px;font-size:10px;line-height:1.7}.hero-actions{margin-top:17px;gap:4px}.hero-actions .button-primary{min-width:175px;min-height:43px;font-size:10px}.hero-actions .button-text{font-size:9px;min-height:30px}.eyebrow{font-size:7px;letter-spacing:1.15px}}
+@media(max-width:680px){.desktop-nav,.header-cta{display:none}.mobile-menu{display:block}.mobile-menu summary{list-style:none;font-size:11px;min-height:44px;display:flex;gap:16px;align-items:center;cursor:pointer;padding:10px 0 10px 16px}.mobile-menu summary::-webkit-details-marker{display:none}.mobile-menu summary>span{font-size:15px;color:#9db3c2}.mobile-menu nav{position:absolute;top:65px;left:0;right:0;padding:14px 22px;background:#08121ff5;border:1px solid #b2cfde25;box-shadow:0 20px 40px #0006;border-radius:2px}.mobile-menu nav a{display:flex;align-items:center;justify-content:space-between;min-height:52px;font-size:15px;border-bottom:1px solid var(--border-subtle)}.mobile-menu nav a:last-child{border-bottom:0;color:var(--accent-ice)}}
+@media(max-width:560px){.hero-copy{grid-template-columns:1fr;gap:0;top:22px}.hero-copy h1{font-size:44px}.hero-offer{margin-top:17px;display:flex;align-items:center;justify-content:space-between;gap:20px}.hero-description{max-width:210px;font-size:10px}.hero-actions{margin:0}.hero-actions .button-primary{min-width:170px}}
+@media(max-width:480px){.header{height:64px}.wordmark{font-size:23px}.hero-copy{left:6%;right:6%;top:24px}.eyebrow{font-size:7px;letter-spacing:1.35px}.hero-copy h1{font-size:42px;line-height:1.045;letter-spacing:-.06em;margin:15px 0 0}.hero-offer{display:block;margin-top:18px}.hero-description{font-size:10px;max-width:280px;line-height:1.65}.hero-actions{margin-top:18px;flex-direction:row;gap:17px;align-items:center;flex-wrap:nowrap}.hero-actions .button-primary{min-width:165px;font-size:10px;gap:20px;padding:10px 12px;min-height:43px}.hero-actions .button-text{max-width:126px;font-size:9px;line-height:1.5;gap:8px;min-height:43px}.hero-actions .button-text span{font-size:17px}.hero-actions .button-primary span{font-size:18px}.mobile-menu nav{top:59px}}
+@media(max-width:374px){.hero-copy h1{font-size:39px}.hero-actions{gap:12px}.hero-actions .button-primary{min-width:155px}}
+/* The device is the first screen. The website itself lives inside its display. */
+.hero-world{position:relative}
+.hero-world>.header{position:absolute;top:0;left:4%;right:4%;width:92%;max-width:none;height:82px;margin:0;border-bottom:0}
+.hero-world>.header .wordmark{font-size:22px;letter-spacing:3px}
+.hero-world>.header .brand-line{display:none}
+.hero-world>.header .desktop-nav a{font-size:10px;color:#8a98a3}
+.hero-world>.header .header-cta{font-size:10px;border-color:#b2cfde20;background:transparent}
+@media(max-width:800px){.hero-world>.header{left:5%;right:5%;width:90%;height:72px}}
+@media(max-width:480px){.hero-world>.header{left:6%;right:6%;width:88%;height:64px}.hero-world>.header .wordmark{font-size:20px}}

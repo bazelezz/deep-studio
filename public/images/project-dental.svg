@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" fill="none">
+  <title>Точность формы — демонстрационная графическая обложка</title>
+  <desc>Авторская иллюстрация: скульптурные минеральные формы, холодный свет и точные синие линии на светлом фоне. Это не скриншот клиентского сайта.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1600" y2="1100" gradientUnits="userSpaceOnUse"><stop stop-color="#E5ECE7"/><stop offset=".48" stop-color="#D8E3DF"/><stop offset="1" stop-color="#BCCFCC"/></linearGradient>
+    <linearGradient id="stone" x1="780" y1="210" x2="1270" y2="880" gradientUnits="userSpaceOnUse"><stop stop-color="#FCFCF5"/><stop offset=".38" stop-color="#E6EBDF"/><stop offset=".76" stop-color="#C9D5CB"/><stop offset="1" stop-color="#9DAFA4"/></linearGradient>
+    <linearGradient id="side" x1="1150" y1="300" x2="1470" y2="700" gradientUnits="userSpaceOnUse"><stop stop-color="#C6D3C7"/><stop offset=".5" stop-color="#96ABA3"/><stop offset="1" stop-color="#829F99"/></linearGradient>
+    <linearGradient id="inside" x1="900" y1="410" x2="1100" y2="650" gradientUnits="userSpaceOnUse"><stop stop-color="#73918D"/><stop offset="1" stop-color="#E8EFE5"/></linearGradient>
+    <linearGradient id="plinth" x1="810" y1="800" x2="1100" y2="1100" gradientUnits="userSpaceOnUse"><stop stop-color="#F2F5EB"/><stop offset="1" stop-color="#A8BCB3"/></linearGradient>
+    <linearGradient id="blue" x1="750" y1="820" x2="1150" y2="830" gradientUnits="userSpaceOnUse"><stop stop-color="#133B5B"/><stop offset=".52" stop-color="#407396"/><stop offset="1" stop-color="#164C70"/></linearGradient>
+    <radialGradient id="light"><stop stop-color="#FFFDF3" stop-opacity=".8"/><stop offset="1" stop-color="#FFFDF3" stop-opacity="0"/></radialGradient>
+    <filter id="blur" x="-40%" y="-90%" width="180%" height="280%"><feGaussianBlur stdDeviation="22"/></filter>
+  </defs>
+  <path fill="url(#background)" d="M0 0h1600v1100H0z"/>
+  <ellipse cx="1000" cy="380" rx="700" ry="620" fill="url(#light)"/>
+  <path d="M0 899h1600" stroke="#889F9B" stroke-opacity=".23"/>
+  <path d="M673 0v1100M1509 0v1100" stroke="#648D92" stroke-opacity=".15"/>
+  <path d="M0 172h1600" stroke="#648D92" stroke-opacity=".15"/>
+  <ellipse cx="1138" cy="965" rx="360" ry="44" fill="#5F817B" opacity=".35" filter="url(#blur)"/>
+  <path d="m744 890 530-60 185 73-536 78Z" fill="#E7EEE4"/>
+  <path d="m923 981 536-78v59l-536 79Z" fill="#A3B9AE"/>
+  <path d="m744 890 179 91v60l-179-91Z" fill="url(#plinth)"/>
+  <path d="M854 837V458c0-152 111-269 251-269 142 0 255 118 255 269v379l-79 40V456c0-121-83-213-188-213-104 0-186 92-186 213v381Z" fill="url(#side)"/>
+  <path d="M780 877V454c0-152 111-269 251-269s250 117 250 269v423h-150V460c0-66-44-116-100-116s-101 50-101 116v417Z" fill="url(#stone)"/>
+  <path d="M930 876V460c0-66 45-116 101-116 36 0 69 21 87 54-16-8-34-13-53-13-57 0-102 50-102 116v375Z" fill="url(#inside)"/>
+  <path d="M780 877V454c0-152 111-269 251-269" stroke="#FFFFFF" stroke-opacity=".7" stroke-width="2"/>
+  <path d="M1131 877V460c0-66-44-116-100-116" stroke="#7D9B90" stroke-opacity=".32"/>
+  <path d="m1006 831 164-24 110 41-164 27Z" fill="#42738A"/>
+  <path d="m1006 831 110 44v28l-110-45Z" fill="url(#blue)"/>
+  <path d="m1116 875 164-27v28l-164 27Z" fill="#174F6A"/>
+  <ellipse cx="1291" cy="905" rx="70" ry="13" fill="#647E72" opacity=".2"/>
+  <circle cx="1290" cy="847" r="61" fill="url(#stone)"/>
+  <path d="M1359 315h74v311h-74M1396 315v311M1388 315h16M1388 626h16" stroke="#215F79" stroke-opacity=".55"/>
+  <circle cx="1031" cy="453" r="193" stroke="#215F79" stroke-opacity=".12" stroke-dasharray="3 11"/>
+  <path d="M982 453h98m-49-49v98" stroke="#215F79" stroke-opacity=".17"/>
+  <path d="M82 88h31v31H82z" stroke="#1E5267"/>
+  <path d="M92 103h11m-5.5-5.5v11" stroke="#1E5267"/>
+  <text x="137" y="110" fill="#305C66" font-family="Arial, sans-serif" font-size="17" letter-spacing="4">ЭСТЕТИКА ТОЧНОСТИ</text>
+  <text x="76" y="389" fill="#153F4A" font-family="Georgia, 'Times New Roman', serif" font-size="99" letter-spacing="-4">Всё начинается</text>
+  <text x="76" y="498" fill="#153F4A" font-family="Georgia, 'Times New Roman', serif" font-size="99" letter-spacing="-4">с доверия.</text>
+  <path d="M82 564h304" stroke="#4B7984" stroke-opacity=".6"/>
+  <text x="82" y="612" fill="#51747A" font-family="Arial, sans-serif" font-size="18" letter-spacing="2">ЯСНОСТЬ. БАЛАНС. ВНИМАНИЕ.</text>
+  <text x="82" y="1007" fill="#416C77" font-family="Arial, sans-serif" font-size="14" letter-spacing="3">ПРОСТОТА, В КОТОРОЙ ЕСТЬ ГЛУБИНА</text>
+  <path d="M82 895h29m-14.5-14.5v29" stroke="#1F5A74"/>
+</svg>

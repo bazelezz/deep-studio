@@ -1,0 +1,33 @@
+import { chromium } from '@playwright/test';
+import fs from 'node:fs/promises';
+await fs.mkdir('docs/screenshots', {recursive:true});
+const browser = await chromium.launch({channel:'chrome',headless:true,args:['--enable-webgl','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+const page = await browser.newPage({viewport:{width:1440,height:1100}, deviceScaleFactor:1});
+const errors=[];
+page.on('pageerror',e=>errors.push(e.message));
+const base=process.env.PLAYWRIGHT_BASE_URL??'http://127.0.0.1:3000';
+const shotStyle='.skip-link:not(:focus){visibility:hidden}nextjs-portal{display:none}';
+await page.goto(base,{waitUntil:'networkidle'});
+await page.locator('#scene[data-scene-state="ready"]').waitFor({timeout:12000});
+await page.screenshot({path:'docs/screenshots/desktop-hero.png',style:shotStyle});
+for (const id of ['capabilities','character','services','projects','contact']) {
+  await page.evaluate(()=>document.documentElement.style.scrollBehavior='auto');
+  const top = await page.locator(`#${id}`).evaluate(el=>el.getBoundingClientRect().top+window.scrollY-24);
+  await page.evaluate(y=>window.scrollTo(0,y),top);
+  await page.waitForTimeout(150);
+  await page.screenshot({path:`docs/screenshots/desktop-${id}.png`,style:shotStyle});
+}
+await page.goto(`${base}/?scene=poster`,{waitUntil:'networkidle'});
+await page.locator('img').evaluateAll(images=>images.forEach(img=>img.loading='eager'));
+await page.evaluate(()=>Promise.all(Array.from(document.images).map(img=>img.decode().catch(()=>{}))));
+await page.screenshot({path:'docs/screenshots/desktop-full.png',fullPage:true,style:shotStyle});
+await page.setViewportSize({width:390,height:844});
+await page.goto(base,{waitUntil:'networkidle'});
+await page.locator('#scene[data-scene-state="ready"]').waitFor({timeout:12000});
+await page.screenshot({path:'docs/screenshots/mobile-hero.png',style:shotStyle});
+await page.goto(`${base}/?scene=poster`,{waitUntil:'networkidle'});
+await page.locator('img').evaluateAll(images=>images.forEach(img=>img.loading='eager'));
+await page.evaluate(()=>Promise.all(Array.from(document.images).map(img=>img.decode().catch(()=>{}))));
+await page.screenshot({path:'docs/screenshots/mobile-full.png',fullPage:true,style:shotStyle});
+console.log(JSON.stringify({errors}));
+await browser.close();

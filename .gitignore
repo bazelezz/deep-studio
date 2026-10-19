@@ -1,0 +1,17 @@
+node_modules/
+.next/
+out/
+test-results*/
+playwright-report/
+*.tsbuildinfo
+.env*
+!.env.example
+.preview/
+*.log
+*.zip
+.DS_Store
+docs/screenshots/*
+!docs/screenshots/studio-final-laptop.png
+!docs/screenshots/studio-final-light-study.png
+!docs/screenshots/studio-final-narrow.png
+!docs/screenshots/studio-final-mobile.png

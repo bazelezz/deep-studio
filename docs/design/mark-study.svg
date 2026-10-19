@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="600" viewBox="0 0 1440 600">
+<rect width="1440" height="600" fill="#030810"/>
+<g fill="#e8ecef">
+<g transform="translate(130 140) scale(3.5)"><path d="M8 12H40C47 12 52 17 52 24V27H34L27 38H8Z"/><path d="M12 44H31L38 33H56V52H24C17 52 12 49 12 44Z"/></g>
+<g transform="translate(610 140) scale(3.5)"><path d="M28 6C16 6 8 14 8 26V50H20V26C20 20 23 17 28 17H43V6H28Z"/><path d="M36 58C48 58 56 50 56 38V14H44V38C44 44 41 47 36 47H21V58H36Z"/></g>
+<g transform="translate(1090 140) scale(3.5)"><path d="M8 8H48V20H20V44H8Z"/><path d="M56 24V56H24V44H44V24Z"/></g>
+</g>
+<g fill="#8d9da9" font-family="Arial,sans-serif" font-size="13" letter-spacing="2"><text x="175" y="475">СДВИГ ПЛАСТИН</text><text x="670" y="475">ПРОЁМ</text><text x="1120" y="475">ДВЕ ПЛОСКОСТИ</text></g>
+</svg>

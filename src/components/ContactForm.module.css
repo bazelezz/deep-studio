@@ -1,0 +1,38 @@
+.form { width: 100%; color: var(--text-primary); }
+.topline { display: flex; justify-content: space-between; align-items: center; color: var(--text-secondary); padding-bottom: 24px; margin-bottom: 30px; border-bottom: 1px solid var(--border-subtle); font-size: 12px; line-height: 1.5; }
+.topline > span:last-child { color: var(--accent-ice); font-size: 23px; font-weight: 300; }
+.twoColumns { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+.field { margin-bottom: 28px; min-width: 0; }
+.field label,.manual label { display: block; font-size: 11px; line-height: 1.6; color: var(--text-secondary); margin-bottom: 9px; }
+.field label > span { color: #718ca3; margin-left: 3px; }
+.field input,.field select,.field textarea,.manual textarea { width: 100%; padding: 12px 0 15px; color: var(--text-primary); background: transparent; font: inherit; font-size: 14px; line-height: 1.65; border: 0; border-bottom: 1px solid rgba(169,216,232,.25); border-radius: 0; transition: border-color .2s; box-sizing: border-box; }
+.field input::placeholder,.field textarea::placeholder { opacity: 1; color: #7e95aa; }
+.field input:focus,.field select:focus,.field textarea:focus { outline: none; border-bottom-color: var(--accent-ice); }
+.field input:focus-visible,.field select:focus-visible,.field textarea:focus-visible { outline: 1px solid rgba(169,216,232,.3); outline-offset: 6px; }
+.field input[aria-invalid="true"],.field textarea[aria-invalid="true"] { border-color: #e8ac9e; }
+.field textarea { min-height: 109px; resize: vertical; max-height: 420px; }
+.fieldError { margin: 9px 0 0; color: #edb8ac; font-size: 11px; line-height: 1.5; }
+.selectWrap { position: relative; }
+.selectWrap select { appearance: none; cursor: pointer; padding-right: 35px; }
+.selectWrap option { background: var(--bg-primary); color: var(--text-primary); }
+.selectWrap svg { position: absolute; top: 15px; right: 4px; width: 20px; height: 20px; stroke: var(--accent-ice); stroke-width: 1.2; fill: none; pointer-events: none; }
+.modeNote { display: flex; align-items: flex-start; gap: 10px; max-width: 420px; font-size: 10px; line-height: 1.8; color: #8ca3b7; margin: 0 0 25px; }
+.modeNote > span { background: var(--accent-ice); opacity: .7; border-radius: 50%; width: 3px; height: 3px; flex-shrink: 0; margin-top: 8px; }
+.submitRow { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.submit { display: inline-flex; justify-content: space-between; align-items: center; gap: 38px; min-height: 55px; background: var(--accent-ice); color: #102b3b; border: 1px solid var(--accent-ice); padding: 16px 22px; font: inherit; font-size: 12px; font-weight: 550; cursor: pointer; transition: background-color .2s; }
+.submit:hover { background: #c4e9f3; }
+.submit svg { height: 21px; width: 21px; transition: transform .2s; }
+.submit:hover svg { transform: translateX(3px); }
+.submit:disabled { cursor: wait; opacity: .65; }
+.requiredNote { font-size: 9px; color: #849aad; line-height: 1.7; margin: 0; }
+.status { color: var(--text-secondary); font-size: 12px; line-height: 1.7; }
+.status:empty { display: none; }
+.status p { margin: 20px 0 0; }
+.success { color: #b7decd; }
+.failure p { color: #edb8ac; }
+.failure button,.manual button { color: var(--accent-ice); background: none; border: 0; border-bottom: 1px solid var(--border-subtle); min-height: 44px; padding: 9px 0; margin-top: 9px; font: inherit; font-size: 11px; cursor: pointer; }
+.manual { margin-top: 22px; }
+.manual textarea { background: rgba(169,216,232,.035); padding: 15px; border: 1px solid var(--border-subtle); font-size: 12px; resize: vertical; }
+.form button:focus-visible,.manual textarea:focus-visible { outline: 2px solid var(--accent-ice); outline-offset: 5px; }
+@media (max-width: 640px) { .twoColumns { grid-template-columns: 1fr; gap: 0; } .topline { padding-bottom: 19px; margin-bottom: 24px; font-size: 11px; } .field { margin-bottom: 25px; } .field input,.field select,.field textarea { font-size: 16px; } .field label { font-size: 11px; } .submitRow { align-items: flex-start; flex-direction: column; gap: 14px; } .submit { width: 100%; padding: 16px 20px; font-size: 13px; } .modeNote { font-size: 10px; } }
+@media (prefers-reduced-motion: reduce) { .form * { transition: none !important; } }
