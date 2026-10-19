@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" fill="none">
+  <title>Тишина — демонстрационная графическая обложка</title>
+  <desc>Авторская иллюстрация: тёплый архитектурный портал, ритм деревянных рёбер и ступени в глубоком зелёном пространстве. Это не скриншот клиентского сайта.</desc>
+  <defs>
+    <linearGradient id="room" x1="0" y1="0" x2="1600" y2="1100" gradientUnits="userSpaceOnUse"><stop stop-color="#344235"/><stop offset=".52" stop-color="#18251E"/><stop offset="1" stop-color="#101B17"/></linearGradient>
+    <linearGradient id="wall" x1="640" y1="0" x2="1430" y2="900" gradientUnits="userSpaceOnUse"><stop stop-color="#667257"/><stop offset=".48" stop-color="#2F3E2D"/><stop offset="1" stop-color="#19271E"/></linearGradient>
+    <linearGradient id="floor" x1="900" y1="720" x2="900" y2="1100" gradientUnits="userSpaceOnUse"><stop stop-color="#687057"/><stop offset="1" stop-color="#1B2921"/></linearGradient>
+    <linearGradient id="reveal" x1="1070" y1="280" x2="1300" y2="290" gradientUnits="userSpaceOnUse"><stop stop-color="#8B7850"/><stop offset=".42" stop-color="#D3BE88"/><stop offset="1" stop-color="#5D5B3E"/></linearGradient>
+    <linearGradient id="inner" x1="1075" y1="300" x2="1260" y2="800" gradientUnits="userSpaceOnUse"><stop stop-color="#121C16"/><stop offset=".78" stop-color="#253222"/><stop offset="1" stop-color="#6A7052"/></linearGradient>
+    <linearGradient id="step" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#8A8C69"/><stop offset="1" stop-color="#45523A"/></linearGradient>
+    <linearGradient id="rib" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#17231C"/><stop offset=".3" stop-color="#3E4B36"/><stop offset=".68" stop-color="#5A6246"/><stop offset="1" stop-color="#283725"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#CFC193" stop-opacity=".24"/><stop offset="1" stop-color="#CFC193" stop-opacity="0"/></radialGradient>
+    <pattern id="ribs" width="30" height="900" patternUnits="userSpaceOnUse"><rect width="24" height="900" fill="url(#rib)"/><path d="M25 0v900" stroke="#859070" stroke-opacity=".18"/></pattern>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="24"/></filter>
+  </defs>
+  <path fill="url(#room)" d="M0 0h1600v1100H0z"/>
+  <path fill="url(#wall)" d="M620 0h980v850H620z"/>
+  <path d="M0 0h680v817L0 1100Z" fill="url(#ribs)"/>
+  <path d="M680 0h26v813l-26 4Z" fill="#0F1D15"/>
+  <path d="M0 1100 706 813h894v287Z" fill="url(#floor)"/>
+  <ellipse cx="1190" cy="770" rx="450" ry="340" fill="url(#glow)"/>
+  <path d="M1025 250h326v563h-326z" fill="#B8A575" opacity=".17" filter="url(#soft)"/>
+  <path d="M1028 240h310v573h-310z" fill="#0E1A12"/>
+  <path d="M1044 254h280v553h-280z" fill="url(#reveal)"/>
+  <path d="M1087 288h198v519h-198z" fill="url(#inner)"/>
+  <path d="M1087 288h198l39-34h-280Z" fill="#C7B683"/>
+  <path d="m1285 288 39-34v553h-39Z" fill="#7B7953"/>
+  <path d="M1045 807V255h278" stroke="#E0D1A1" stroke-width="3"/>
+  <path d="M1098 790V300h174" stroke="#9F9C6B" stroke-opacity=".35"/>
+  <path d="M1102 807h170l39 24h-244Z" fill="#8E9272"/>
+  <path d="M1067 831h244v15h-244z" fill="#3A4A31"/>
+  <path d="M1067 846h244l61 34h-366Z" fill="url(#step)"/>
+  <path d="M1006 880h366v20h-366z" fill="#37472E"/>
+  <path d="M1006 900h366l90 44H916Z" fill="url(#step)"/>
+  <path d="M916 944h546v24H916z" fill="#30412A"/>
+  <path d="M916 968h546l133 65H783Z" fill="url(#step)"/>
+  <path d="M783 1033h812v30H783z" fill="#253721"/>
+  <path d="M783 1033h812M916 944h546M1006 880h366" stroke="#B6B590" stroke-opacity=".45"/>
+  <path d="M706 0v813M706 813h894" stroke="#8E9878" stroke-opacity=".24"/>
+  <path d="m0 1100 706-287M314 1100l529-287M652 1100l354-287M1400 1100l-94-287" stroke="#CAD0AB" stroke-opacity=".07"/>
+  <path d="M78 79h48" stroke="#D6D5BB" stroke-width="2"/>
+  <text x="148" y="86" fill="#D6D5BB" font-family="Arial, sans-serif" font-size="18" letter-spacing="4">ПРОСТРАНСТВО ДЛЯ ПАУЗЫ</text>
+  <text x="70" y="780" fill="#E2DFCC" font-family="Georgia, 'Times New Roman', serif" font-size="141" font-weight="400" letter-spacing="-5">Тишина.</text>
+  <path d="M80 825h385" stroke="#D6D5BB" stroke-opacity=".5"/>
+  <text x="80" y="865" fill="#C3C8B3" font-family="Arial, sans-serif" font-size="18" letter-spacing="2">СВЕТ. МАТЕРИАЛ. СОСТОЯНИЕ.</text>
+  <text x="80" y="1024" fill="#AEB79E" font-family="Arial, sans-serif" font-size="14" letter-spacing="3">АРХИТЕКТУРА ВПЕЧАТЛЕНИЯ</text>
+</svg>

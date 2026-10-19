@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" fill="none">
+  <title>Вне рутины — демонстрационная графическая обложка</title>
+  <desc>Авторская геометрическая иллюстрация: графитовые и оранжевые плоскости, контурные линии и мишень. Это не скриншот клиентского сайта.</desc>
+  <defs>
+    <linearGradient id="orange" x1="0" y1="0" x2="1500" y2="1100" gradientUnits="userSpaceOnUse"><stop stop-color="#F27033"/><stop offset=".6" stop-color="#CB4A23"/><stop offset="1" stop-color="#9E361D"/></linearGradient>
+    <linearGradient id="slab" x1="600" y1="200" x2="1100" y2="950" gradientUnits="userSpaceOnUse"><stop stop-color="#3A423E"/><stop offset="1" stop-color="#171F1C"/></linearGradient>
+    <linearGradient id="cream" x1="900" y1="200" x2="1500" y2="1000" gradientUnits="userSpaceOnUse"><stop stop-color="#EDE7CF"/><stop offset="1" stop-color="#B4B69A"/></linearGradient>
+    <pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M100 0H0v100" stroke="#2B251C" stroke-opacity=".11" stroke-width="1"/></pattern>
+    <clipPath id="bounds"><path d="M0 0h1600v1100H0z"/></clipPath>
+  </defs>
+  <g clip-path="url(#bounds)">
+    <path fill="url(#orange)" d="M0 0h1600v1100H0z"/>
+    <path fill="url(#grid)" d="M0 0h1600v1100H0z"/>
+    <g stroke="#572B20" stroke-width="1.5" opacity=".37">
+      <path d="M-90 160C160 80 250 190 280 400s180 150 220 340-40 390-40 390"/>
+      <path d="M-90 135C190 55 275 170 305 385s180 155 220 350-40 395-40 395"/>
+      <path d="M-90 110C220 30 300 150 330 370s180 160 220 360-40 400-40 400"/>
+      <path d="M-90 85C250 5 325 130 355 355s180 165 220 370-40 405-40 405"/>
+      <path d="M-90 60C280-20 350 110 380 340s180 170 220 380-40 410-40 410"/>
+      <path d="M-90 35C310-45 375 90 405 325s180 175 220 390-40 415-40 415"/>
+      <path d="M-90 10C340-70 400 70 430 310s180 180 220 400-40 420-40 420"/>
+      <path d="M-90-15C370-95 425 50 455 295s180 185 220 410-40 425-40 425"/>
+      <path d="M-90-40C400-120 450 30 480 280s180 190 220 420-40 430-40 430"/>
+      <path d="M-90-65C430-145 475 10 505 265s180 195 220 430-40 435-40 435"/>
+      <path d="M-90-90C460-170 500-10 530 250s180 200 220 440-40 440-40 440"/>
+      <path d="M-90-115C490-195 525-30 555 235s180 205 220 450-40 445-40 445"/>
+    </g>
+    <circle cx="1228" cy="508" r="447" stroke="#F4B481" stroke-opacity=".36"/>
+    <circle cx="1228" cy="508" r="387" stroke="#F4B481" stroke-opacity=".36"/>
+    <circle cx="1228" cy="508" r="327" stroke="#F4B481" stroke-opacity=".36"/>
+    <circle cx="1228" cy="508" r="267" stroke="#F4B481" stroke-opacity=".36"/>
+    <circle cx="1228" cy="508" r="207" stroke="#F4B481" stroke-opacity=".36"/>
+    <path d="M1228-40v1110M730 508h950" stroke="#F4B481" stroke-opacity=".24" stroke-dasharray="5 12"/>
+    <path d="m622 876 351-698 178 89-351 698Z" fill="#762A19" opacity=".35"/>
+    <path d="m658 848 351-698 178 89-351 698Z" fill="url(#slab)"/>
+    <path d="m658 848 20 42 178 89-20-42Z" fill="#131D18"/>
+    <path d="m836 937 20 42 351-698-20-42Z" fill="#414D42"/>
+    <path d="m658 848 351-698 178 89" stroke="#727769" stroke-width="2"/>
+    <path d="m1023 1070 464-922 152 77-464 922Z" fill="#7C301D" opacity=".35"/>
+    <path d="m1061 1031 464-922 152 77-464 922Z" fill="url(#cream)"/>
+    <path d="m1213 1108 24 28 464-922-24-28Z" fill="#858C73"/>
+    <path d="m1061 1031 464-922 152 77" stroke="#FFF1D6" stroke-width="2"/>
+    <g transform="translate(1129 500) rotate(27)">
+      <circle r="176" fill="#15251E"/>
+      <circle r="145" stroke="#D9DEC2" stroke-width="1.5"/>
+      <circle r="113" stroke="#D9DEC2" stroke-width="1.5"/>
+      <circle r="81" stroke="#D9DEC2" stroke-width="1.5"/>
+      <circle r="49" stroke="#D9DEC2" stroke-width="1.5"/>
+      <circle r="14" fill="#E96B37"/>
+      <path d="M-196 0h64M132 0h64M0-196v64M0 132v64" stroke="#E4E9CE" stroke-width="2"/>
+    </g>
+    <text x="77" y="109" fill="#F1E8CC" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="5">ВЫЙТИ ЗА ПРИВЫЧНОЕ</text>
+    <path d="M80 165h220" stroke="#F4D4AA"/>
+    <text x="68" y="430" fill="#F6EACF" font-family="Arial, sans-serif" font-size="210" font-weight="900" letter-spacing="-14">ВНЕ</text>
+    <text x="68" y="612" fill="#F6EACF" font-family="Arial, sans-serif" font-size="160" font-weight="900" letter-spacing="-10">РУТИНЫ.</text>
+    <path d="M80 710h168v57H80z" stroke="#F0C89E"/>
+    <path d="M100 738h126m-20-14 20 14-20 14" stroke="#F6EACF" stroke-width="2"/>
+    <text x="80" y="1019" fill="#EDCFAC" font-family="Arial, sans-serif" font-size="15" letter-spacing="3">ЭНЕРГИЯ В ПРОСТЫХ ФОРМАХ</text>
+    <g stroke="#F7D5AA"><path d="M1480 976h40m-20-20v40"/><circle cx="1500" cy="976" r="31"/></g>
+  </g>
+</svg>
