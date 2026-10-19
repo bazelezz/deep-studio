@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useLayoutEffect, useRef, useState, type ComponentType, type ReactNode } from 'react';
 import { gsap } from 'gsap';
+import { assetPath } from '@/config/assetPath';
 import type { LaptopCanvasProps, SceneControls, SceneDebug, ScenePhase, ScreenQuad } from './scene/types';
 import { displayMatrix } from './scene/projectDisplay';
 import { lockIntroViewport } from './scene/introViewport';
@@ -173,9 +174,9 @@ export default function SceneExperience({ children }: { children: ReactNode }) {
     <div ref={stage} className={styles.stage}>
       {!content && <>
         <div className={`${styles.poster} ${prepared ? styles.posterHidden : ''}`} aria-hidden="true"><picture>
-          <source media="(max-width:480px)" srcSet="/images/atelier-mobile-closed.webp" />
-          <source media="(max-width:800px)" srcSet="/images/atelier-tablet-closed.webp" />
-          <img src="/images/atelier-desktop-closed.webp" width="1440" height="900" alt="" fetchPriority="high" />
+          <source media="(max-width:480px)" srcSet={assetPath('/images/atelier-mobile-closed.webp')} />
+          <source media="(max-width:800px)" srcSet={assetPath('/images/atelier-tablet-closed.webp')} />
+          <img src={assetPath('/images/atelier-desktop-closed.webp')} width="1440" height="900" alt="" fetchPriority="high" />
         </picture></div>
         <div ref={cameraWarp} className={styles.cameraWarp} aria-hidden="true"><div className={`${styles.canvas} ${prepared ? styles.canvasReady : ''}`}>
           {Scene && <Scene cinematic debug={debug} onReady={onReady} onError={fail} onBounds={() => {}} onDisplay={onDisplay} />}

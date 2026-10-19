@@ -5,12 +5,13 @@ import Image from 'next/image';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { siteConfig, type Project } from '@/config/site';
+import { assetPath } from '@/config/assetPath';
 import styles from './ProjectReel.module.css';
 
 function ProjectFrame({ project, index }: { project: Project; index: number }) {
   return <article className={styles.frame} data-project-frame>
     <div className={styles.picture}>
-      <Image src={project.image} alt={project.imageAlt} width={1600} height={1100} sizes="(min-width: 901px) 72vw, 100vw" loading="lazy" unoptimized />
+      <Image src={assetPath(project.image)} alt={project.imageAlt} width={1600} height={1100} sizes="(min-width: 901px) 72vw, 100vw" loading="lazy" unoptimized />
       <span className={styles.frameNumber} aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
       {project.demoCover && <span className={styles.coverLabel}>Демонстрационная обложка</span>}
     </div>
